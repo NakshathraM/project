@@ -1,50 +1,60 @@
-# Aura AI - AI Productivity Suite (Day 1 Spec & Foundation Scaffold)
+ #  HabitForge AI — Build Streaks. Break Excuses.
 
-A minimalist, high-performance task management and cognitive optimization dashboard built to satisfy the Forge/Conesta Day 1 foundation criteria.
+> An AI-powered habit coach web app that tracks your daily habits, builds streaks, and uses **Google Gemini AI (free)** to destroy every excuse you make.
 
-## Features & Screens
+---
 
-1. **Home Page (`/`)**: High-converting visual hero landing showcasing Core Features, Call-To-Action entry routes, and project indicators.
-2. **Dashboard (`/dashboard`)**: Summary cards with key metrics (Focus Hours, Task Completion rate, Weekly performance benchmarks) and recent activities.
-3. **Tasks Page (`/tasks`)**: Task tracking console detailing categories, status flags (Completed, In Progress, Backlog), and priority parameters (High, Medium, Low).
-4. **AI Assistant (`/ai`)**: Simulated performance diagnostic dashboard providing daily tips and high-impact focus recommendations.
+##  What It Does
 
-## Tech Stack
+- **Track daily habits** — add anything like "Meditate 10 mins", "No junk food", "Read 20 pages"
+- **Build streaks** — each daily check-in grows your streak counter 🔥
+- **AI Excuse Breaker** — type your excuse, Gemini AI calls it out and gives you a micro-action to do RIGHT NOW
+- **Stats dashboard** — see your best streak, habits done today, and total habits
 
-- **Framework**: [Next.js 15+](https://nextjs.org) (App Router Structure)
-- **Language**: [TypeScript](https://www.typescriptlang.org)
-- **Styling**: [Tailwind CSS v4](https://tailwindcss.com) (Premium modern dark theme)
-- **Components**: [React 19](https://react.dev)
+---
 
-## Local Development
+##  Core Screens
 
-Follow these steps to run the application locally:
+| Screen | Description |
+|---|---|
+| **Dashboard** | Best streak, done today, total habits |
+| **Habit Tracker** | Add/delete habits, daily check-ins, per-habit streak badges |
+| **AI Excuse Breaker** | Type excuse → Gemini AI responds with motivation + a micro-action |
+| **API Key Modal** | Enter your free Gemini key (stored in browser only) |
 
-### 1. Install Dependencies
+---
+
+## ⚙️ Tech Stack
+
+- **Frontend:** Vanilla HTML + CSS + JavaScript (zero dependencies)
+- **AI:** Google Gemini 2.0 Flash API (free tier — 1500 requests/day)
+- **Storage:** Browser `localStorage` (no backend, no database needed)
+- **Fonts:** Google Fonts — Space Grotesk + Inter
+
+---
+
+
+### Just open the file
+1. Download or clone this repo
+2. Open `index.html` in any browser — that's it!
+
+### Clone via Git
 ```bash
-npm install
-```
-
-### 2. Run the Development Server
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to interact with the application.
-
-### 3. Build & Compile Checks
-```bash
-npm run build
+git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+cd YOUR_REPO
+# open index.html in your browser
 ```
 
 ---
 
-## Day 1 Milestone Alignment Status
+##  Getting Your Free Gemini API Key
 
-| Requirement / Spec | Status | Description |
-| :--- | :---: | :--- |
-| **App Router `/app` Structure** | ✅ Done | Utilizes standard layouts and client/server page segregation. |
-| **Tailwind Styling & Dark Theme** | ✅ Done | Premium dark UI theme initialized with a harmonious palette (`#09090b` zinc-950 base). |
-| **Layout & Navbar Integration** | ✅ Done | Navigation layout handles active path identification dynamically without glitches. |
-| **Compile & Build Checklist** | ✅ Done | Zero TypeScript warnings, placeholder comments, or build errors. |
-| **No External API Dependencies** | ✅ Done | Built completely client-side utilizing stable mock structures. |
+1. Go to [aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey)
+2. Sign in with your Google account
+3. Click **"Create API Key"**
+
+
+
+---
+
+## 📁 Project Structure
