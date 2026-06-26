@@ -1,8 +1,9 @@
 // components/Footer.tsx
+<html>
+    <body>
+        import {FaInstagram, FaFacebook, FaTwitter, FaLinkedin} from 'react-icons/fa';
 
-import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
-
-export default function Footer() {
+        export default function Footer() {
 
     return (
 
@@ -85,6 +86,8 @@ export default function Footer() {
 
         </footer>
 
-    );
+        );
 
 }
+    </body>
+</html>
