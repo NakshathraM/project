@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background: #fff;
+    overflow-x: hidden;
+}
+
+.gradient-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+
+    background: linear-gradient(-45deg,
+            #ffffff,
+            #ffe0ef,
+            #ffc5dc,
+            #fff5fa);
+
+    background-size: 400% 400%;
+
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+
+.glass {
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, .55);
+    border: 1px solid rgba(255, 255, 255, .4);
+}
+
+.hero-btn {
+    padding: 16px 30px;
+    border-radius: 999px;
+    transition: .35s;
+    font-weight: 700;
+}
+
+.hero-btn:hover {
+    transform: translateY(-4px);
+}
+
+.pink-btn {
+    background: #FF69B4;
+    color: white;
+}
+
+.pink-btn:hover {
+    background: #ff4ea6;
+}
+
+.white-btn {
+    background: white;
+    color: #FF69B4;
+}
