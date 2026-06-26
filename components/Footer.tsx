@@ -1,11 +1,6 @@
 // components/Footer.tsx
 
-import {
-    Instagram,
-    Facebook,
-    Twitter,
-    Linkedin
-} from "lucide-react";
+import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
 
